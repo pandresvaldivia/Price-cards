@@ -1,0 +1,106 @@
+.cards-container {
+	display: flex;
+	gap: 48px;
+	padding-block-start: 24px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+article[class^='card'] {
+	max-inline-size: 292px;
+	padding: 29px;
+	background: var(--white);
+	border-radius: 26px;
+	-webkit-border-radius: 26px;
+	-moz-border-radius: 26px;
+	-ms-border-radius: 26px;
+	-o-border-radius: 26px;
+	position: relative;
+	max-inline-size: 292px;
+	box-sizing: border-box;
+}
+
+article.card-popular {
+	color: var(--black);
+	background: var(--primary) url('../assets/images/background.svg') 190px top
+		no-repeat;
+	padding-block-end: 37px;
+	padding-block-start: 53px;
+	box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+	order: 1;
+}
+
+.card:first-of-type {
+	order: 2;
+}
+
+.card:nth-of-type(2) {
+	order: 3;
+}
+
+.card:last-of-type {
+	order: 4;
+}
+
+.card-price p {
+	display: flex;
+	align-items: center;
+}
+
+.card-price em {
+	font: var(--headline2);
+	color: var(--black);
+	margin-inline-end: 8px;
+}
+
+.card-price p {
+	margin-block-start: 0;
+}
+
+.card-info {
+	margin-block-start: 16px;
+}
+
+.card-title {
+	font: var(--headline2);
+	color: var(--black);
+	margin-block-end: 10px;
+	margin-block-start: 0;
+}
+
+@media screen and (min-width: 1236px) {
+	.cards-container {
+		gap: 32px;
+		background: var(--white);
+		position: relative;
+		block-size: 470px;
+		padding: 40px;
+		box-sizing: border-box;
+		border-radius: 26px;
+		margin-block-start: 60px;
+	}
+
+	article.card {
+		padding: 0;
+		inline-size: 234px;
+		block-size: 390px;
+	}
+
+	article.card-popular {
+		position: relative;
+		top: -90px;
+		order: 0;
+	}
+
+	.card:first-of-type,
+	.card:nth-of-type(2),
+	.card:last-of-type {
+		order: 0;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.cards-container {
+		margin-block-start: 130px;
+	}
+}

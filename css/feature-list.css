@@ -1,0 +1,23 @@
+.feature-list {
+	font: var(--body2-regular);
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-inline-start: 0;
+}
+
+li[class^='feature'] {
+	padding-inline-start: 28px;
+	background: url('../assets/icons/check.svg') no-repeat;
+	opacity: 1;
+}
+
+li.feature-disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.card-popular li[class^='feature'] {
+	background: url('../assets/icons/check-selected.svg') no-repeat;
+}

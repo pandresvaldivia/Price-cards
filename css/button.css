@@ -1,0 +1,43 @@
+.card-button {
+	font: var(--body1-bold);
+	color: var(--primary);
+	padding-inline-end: 32px;
+	padding-inline-start: 32px;
+	padding-block-end: 12px;
+	padding-block-start: 12px;
+	background: rgba(255, 142, 60, 0.1);
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	-ms-border-radius: 90px;
+	-o-border-radius: 90px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin-block-start: 16px;
+	position: relative;
+	transition: 0.5s;
+}
+
+.card-popular .card-button {
+	background: var(--black);
+	color: var(--white);
+}
+
+.card-button::after {
+	content: '\00bb';
+	position: absolute;
+	font-size: 2rem;
+	opacity: 0;
+	top: 10px;
+	right: 50px;
+	transition: 0.5s;
+}
+
+.card-button:hover {
+	padding-inline-start: 22px;
+}
+
+.card-button:hover::after {
+	opacity: 1;
+}

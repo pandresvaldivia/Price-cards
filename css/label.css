@@ -1,0 +1,21 @@
+.card-label {
+	font: var(--caption-bold);
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: #ffd5b6;
+	text-transform: uppercase;
+	padding-block-end: 6px;
+	padding-block-start: 6px;
+	padding-inline-end: 18px;
+	padding-inline-start: 18px;
+	border-radius: 14px;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
+}
+
+.card-label p {
+	margin: 0;
+}

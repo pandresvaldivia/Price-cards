@@ -1,0 +1,34 @@
+:root {
+	--black: #373737;
+	--primary: #ff8e3c;
+	--white: #ffffff;
+	--grey: #848199;
+	--red: #fa513a;
+	--grey-2: #a3a3a3;
+	--bg: #f5f5fa;
+	--fontBase: 'Poppins', sans-serif;
+	--headline2: 600 1.75rem / normal var(--fontBase);
+	--headline3: 600 1.25rem/1.375rem var(--fontBase);
+	--button: 400 0.875rem/1rem var(--fontBase);
+	--headline1: 600 3.5rem / normal var(--fontBase);
+	--body1-regular: 400 1rem/1.5rem var(--fontBase);
+	--body1-bold: 700 1rem/1.5rem var(--fontBase);
+	--body2-bold: 700 0.875rem/1.5rem var(--fontBase);
+	--body2-regular: 400 0.875rem/1.5rem var(--fontBase);
+	--caption-regular: 400 0.75rem/1rem var(--fontBase);
+	--caption-bold: 600 0.75rem/1rem var(--fontBase);
+}
+
+.body {
+	font: var(--body1-regular);
+	color: var(--grey);
+	background: var(--bg);
+	margin: 0;
+}
+
+.wrapper {
+	padding: 32px;
+	min-inline-size: 292px;
+	margin: 0 auto;
+	max-inline-size: 1170px;
+}

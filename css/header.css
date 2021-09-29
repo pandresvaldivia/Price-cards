@@ -1,0 +1,17 @@
+.header h1 {
+	font: var(--headline2);
+	color: var(--black);
+	margin-block-end: 8px;
+	margin-block-start: 0;
+}
+
+.header p {
+	margin-block-end: 16px;
+	margin-block-start: 8px;
+}
+
+@media screen and (min-width: 1036px) {
+	.header h1 {
+		font: var(--headline1);
+	}
+}
