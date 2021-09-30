@@ -32,3 +32,9 @@
 	margin: 0 auto;
 	max-inline-size: 1170px;
 }
+
+@media screen and (min-width: 1400px) {
+	.wrapper {
+		margin-block-start: 128px;
+	}
+}

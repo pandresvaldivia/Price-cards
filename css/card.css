@@ -7,7 +7,6 @@
 }
 
 article[class^='card'] {
-	max-inline-size: 292px;
 	padding: 29px;
 	background: var(--white);
 	border-radius: 26px;
@@ -16,7 +15,7 @@ article[class^='card'] {
 	-ms-border-radius: 26px;
 	-o-border-radius: 26px;
 	position: relative;
-	max-inline-size: 292px;
+	max-inline-size: 311px;
 	box-sizing: border-box;
 }
 
@@ -78,6 +77,10 @@ article.card-popular {
 		box-sizing: border-box;
 		border-radius: 26px;
 		margin-block-start: 60px;
+	}
+
+	article[class^='card'] {
+		max-inline-size: 292px;
 	}
 
 	article.card {
